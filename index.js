@@ -23,7 +23,7 @@ server.use("/todo",TodoRoutes)
 
 //rootes
 server.get("/",(req,res)=>{
-    server.status(400).json({"mess":"welcome home"})
+    res.status(400).json({"mess":"welcome home"})
 })
 
 
