@@ -21,7 +21,7 @@ todoRoute.get("/get-all", Auth, async (req, res) => {
     const { ageold, agenew, dateold, datenew, name, title } = req.query;
     const query = {};
 
-    if (AdminRole.includes("VIEW_ALL")) {
+    if (AdminRole.includes("CREATER")) {
         try {
             let userfind;
 
